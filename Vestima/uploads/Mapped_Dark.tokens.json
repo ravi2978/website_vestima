@@ -1,0 +1,129 @@
+{
+  "$metadata": {
+    "tokenSetName": "Mapped",
+    "mode": "Dark Mode",
+    "loadOrder": 3,
+    "requires": [
+      "Vestima UI Collection",
+      "Alias"
+    ],
+    "usage": "Apply these tokens when building dark mode UI. Use Mapped Light Mode for light UI.",
+    "note": "$ref shows which Alias or Vestima primitive this resolves from."
+  },
+  "Text": {
+    "Heading": {
+      "$type": "color",
+      "$value": "#FFFFFF",
+      "$ref": "Secondary.100"
+    },
+    "Body": {
+      "$type": "color",
+      "$value": "#FFFFFF",
+      "$ref": "Secondary.100"
+    },
+    "Action": {
+      "$type": "color",
+      "$value": "#204764",
+      "$ref": "Primary.Default"
+    },
+    "Action Hover": {
+      "$type": "color",
+      "$value": "#7991A2",
+      "$ref": "Primary.400"
+    },
+    "Disabled": {
+      "$type": "color",
+      "$value": "#848A8F",
+      "$ref": "Color.Vestima Grey.400"
+    },
+    "Alert": {
+      "$type": "color",
+      "$value": "#C00F0C",
+      "$ref": "Alert.Default"
+    },
+    "Success": {
+      "$type": "color",
+      "$value": "#009951",
+      "$ref": "Success.Default"
+    },
+    "Warning": {
+      "$type": "color",
+      "$value": "#E5A000",
+      "$ref": "Warning.Default"
+    }
+  },
+  "Icon": {
+    "Default": {
+      "$type": "color",
+      "$value": "#FFFFFF",
+      "$ref": "Secondary.100"
+    },
+    "Action": {
+      "$type": "color",
+      "$value": "#204764",
+      "$ref": "Primary.Default"
+    },
+    "Action Hover": {
+      "$type": "color",
+      "$value": "#7991A2",
+      "$ref": "Primary.400"
+    },
+    "Disabled": {
+      "$type": "color",
+      "$value": "#848A8F",
+      "$ref": "Color.Vestima Grey.400"
+    },
+    "Alert": {
+      "$type": "color",
+      "$value": "#C00F0C",
+      "$ref": "Alert.Default"
+    },
+    "Success": {
+      "$type": "color",
+      "$value": "#009951",
+      "$ref": "Success.Default"
+    },
+    "Warning": {
+      "$type": "color",
+      "$value": "#E5A000",
+      "$ref": "Warning.Default"
+    }
+  },
+  "Surface": {
+    "Page": {
+      "$type": "color",
+      "$value": "#132B3C",
+      "$ref": "Primary.800"
+    },
+    "Default": {
+      "$type": "color",
+      "$value": "#E6E9EB",
+      "$ref": "Secondary.Default"
+    },
+    "Action": {
+      "$type": "color",
+      "$value": "#7991A2",
+      "$ref": "Primary.400"
+    },
+    "Action Hover": {
+      "$type": "color",
+      "$value": "#7991A2",
+      "$ref": "Primary.400"
+    },
+    "Alert": {
+      "$type": "color",
+      "$value": "#F2CFCE",
+      "$ref": "Alert.200"
+    },
+    "Success": {
+      "$type": "color",
+      "$value": "#CCEBDC",
+      "$ref": "Success.200"
+    },
+    "Warning": {
+      "$type": "color",
+      "$value": "#FAECCC",
+      "$ref": "Warning.200"
+    }
+  }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{if(sessionStorage.getItem('pt-incoming')==='1'){document.documentElement.classList.add('pt-incoming');}}catch(e){}})();</script>
+<title>Contact — Book a demo with Vestima</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/tokens.css?v=25">
+<link rel="stylesheet" href="assets/layout.css?v=25">
+<link rel="stylesheet" href="assets/home.css?v=25">
+</head>
+<body>
+<div class="page-transition" id="ptOverlay"><div class="pt-logo"><img src="assets/logo-full.png" alt="Vestima"></div></div>
+<div id="page-ticker" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a href="index.html" class="logo"><img src="assets/logo-full.png" alt="Vestima"></a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="vantage.html">Vantage</a>
+    <a href="veridex.html">Veridex</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+  <a href="#form" class="btn btn-primary header-cta">Book demo</a>
+</header>
+
+<section class="hero" style="padding:180px 0 100px;min-height:auto;">
+  <div class="hero-bg"><div class="grid-lines"></div><div class="wash w1"></div><div class="wash w2"></div></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="contact-layout">
+      <div class="contact-info">
+        <span class="eyebrow" data-reveal>Book a demo</span>
+        <h1 data-reveal data-delay="1">Schedule a walkthrough with our <em>team.</em></h1>
+        <p class="lead" data-reveal data-delay="2">Explore our growing ecosystem of financial intelligence tools and see how Vestima helps your institution stay ahead of evolving regulatory requirements.</p>
+        <div class="contact-blocks" data-reveal data-delay="3">
+          <div>
+            <h6>Office</h6>
+            <p>Office 508, 5th Floor<br>Naman Midtown, B Wing<br>Senapati Bapat Marg<br>Near Indiabulls, Delisle Road<br>Mumbai, Maharashtra<br>India – 400013</p>
+          </div>
+          <div>
+            <h6>Get in touch</h6>
+            <div class="line"><a href="tel:+919920848331">+91 99208 48331</a></div>
+            <div class="line"><a href="mailto:adeshbhavsar29@gmail.com">adeshbhavsar29@gmail.com</a></div>
+            <h6 style="margin-top:24px;">Socials</h6>
+            <div class="line"><a href="https://www.linkedin.com/company/Vestima" target="_blank">LinkedIn</a></div>
+            <div class="line"><a href="https://www.youtube.com/@VestimaGoldStandard" target="_blank">YouTube</a></div>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="form" data-reveal data-delay="1">
+        <div class="field"><label for="name">Name</label><input id="name" type="text" placeholder="Jane Smith" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" type="email" placeholder="jane@company.com" required></div>
+        <div class="field"><label for="company-name">Company name</label><input id="company-name" type="text" placeholder="Mirae Asset" required></div>
+        <div class="field"><label for="company">Company type</label><select id="company" required><option value="">Select…</option><option>AMC</option><option>PMS</option><option>AIF</option><option>Broker</option><option>Distributor</option><option>Family Office</option><option>Bank / Treasury</option><option>Insurance</option><option>Other</option></select></div>
+        <div class="field"><label for="position">Your position</label><input id="position" type="text" placeholder="Chief Compliance Officer" required></div>
+        <div class="field"><label for="product">Interested in</label><select id="product"><option>Both Veridex &amp; Vantage</option><option>Veridex only</option><option>Vantage only</option><option>Not sure yet</option></select></div>
+        <div class="field"><label for="msg">Message</label><textarea id="msg" placeholder="Tell us what you're trying to solve..."></textarea></div>
+        <button type="submit" class="submit" id="submit-btn">Submit →</button>
+        <div id="form-msg" style="display:none;margin-top:16px;font-size:14px;"></div>
+      </form>
+
+      <script>
+        document.getElementById('form').addEventListener('submit', function(e) {
+          e.preventDefault();
+          var btn = document.getElementById('submit-btn');
+          var msg = document.getElementById('form-msg');
+
+          btn.textContent = 'Sending…';
+          btn.disabled = true;
+
+          var payload = {
+            name:         document.getElementById('name').value,
+            email:        document.getElementById('email').value,
+            company_name: document.getElementById('company-name').value,
+            company:      document.getElementById('company').value,
+            position:     document.getElementById('position').value,
+            product:      document.getElementById('product').value,
+            message:      document.getElementById('msg').value,
+            timestamp:    new Date().toISOString(),
+            source:       'contact.html'
+          };
+
+          fetch('https://script.google.com/macros/s/AKfycbwopGCH-BqqmZTBoNpP8Pa4wR-_8C9BYzzl1SXNRmfHAVJg3_BzgJvIT-3qV0lqiUOS/exec', {
+            method: 'POST',
+            body: JSON.stringify(payload)
+          })
+          .then(function(r) { return r.json(); })
+          .then(function(data) {
+            if (data.success) {
+              btn.textContent = 'Thank you — we\'ll be in touch.';
+              btn.style.background = 'var(--green-600)';
+              msg.style.display = 'block';
+              msg.style.color = 'var(--success-600)';
+              msg.textContent = 'Your message has been received. Expect to hear from us within 24 hours.';
+              document.getElementById('form').reset();
+            } else {
+              throw new Error('Server error');
+            }
+          })
+          .catch(function() {
+            btn.textContent = 'Submit →';
+            btn.disabled = false;
+            msg.style.display = 'block';
+            msg.style.color = 'red';
+            msg.textContent = 'Something went wrong. Please email us directly at adeshbhavsar29@gmail.com';
+          });
+        });
+      </script>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><div class="logo"><img src="assets/logo-full.png" alt="Vestima"></div><p>Vestima Goldstandard Financial Technologies Pvt Ltd. Engineering confidence in financial markets.</p></div>
+      <div class="footer-col"><h6>Company</h6><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h6>Products</h6><ul><li><a href="veridex.html">Veridex</a></li><li><a href="vantage.html">Vantage</a></li></ul></div>
+      <div class="footer-col"><h6>Socials</h6><ul><li><a href="https://www.linkedin.com/company/Vestima" target="_blank">LinkedIn</a></li><li><a href="https://www.youtube.com/@VestimaGoldStandard" target="_blank">YouTube</a></li></ul></div>
+      <div class="footer-col"><h6>Contact</h6><ul><li><a href="mailto:adeshbhavsar29@gmail.com">adeshbhavsar29@gmail.com</a></li><li><a href="tel:+919920848331">+91 99208 48331</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div>© 2026 Vestima Goldstandard Financial Technologies Pvt Ltd</div></div>
+  </div>
+</footer>
+<script src="assets/site.js?v=25"></script>
+</body>
+</html>

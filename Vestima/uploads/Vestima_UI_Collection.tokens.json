@@ -1,0 +1,304 @@
+{
+  "$metadata": {
+    "tokenSetName": "Vestima UI Collection",
+    "loadOrder": 1
+  },
+  "Color": {
+    "Vestima Blue": {
+      "100": {
+        "$type": "color",
+        "$value": "#E8ECEF"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#D2DAE0"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#A6B5C1"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#7991A2"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#4D6C83"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#204764"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#1A3950"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#132B3C"
+      }
+    },
+    "Vestima White": {
+      "100": {
+        "$type": "color",
+        "$value": "#FFFFFF"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#FAFBFB"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#F5F6F7"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#F0F2F3"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#EBEDEF"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#E6E9EB"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#B8BABC"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#8A8C8D"
+      }
+    },
+    "Vestima Grey": {
+      "100": {
+        "$type": "color",
+        "$value": "#E6E9EB"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#B5B9BB"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#9DA2A5"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#848A8F"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#6C7379"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#545C63"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#3B454C"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#0A161F"
+      }
+    },
+    "Warning Yellow": {
+      "100": {
+        "$type": "color",
+        "$value": "#FCF5E5"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#FAECCC"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#F5D999"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#EFC666"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#EAB333"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#E5A000"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#B78000"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#896000"
+      }
+    },
+    "Alert Red": {
+      "100": {
+        "$type": "color",
+        "$value": "#F8E7E6"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#F2CFCE"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#E69F9E"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#CC3F3D"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#CC3F3D"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#C00F0C"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#9A0C0A"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#730907"
+      }
+    },
+    "Success Green": {
+      "100": {
+        "$type": "color",
+        "$value": "#E5F4ED"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#CCEBDC"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#99D6B9"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#66C297"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#33AD74"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#009951"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#007A41"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#005C31"
+      }
+    }
+  },
+  "Fonts": {
+    "Font Weight": {
+      "Regular": {
+        "$type": "string",
+        "$value": "Regular"
+      },
+      "Medium": {
+        "$type": "string",
+        "$value": "Medium"
+      },
+      "Semibold": {
+        "$type": "string",
+        "$value": "SemiBold"
+      },
+      "Bold": {
+        "$type": "string",
+        "$value": "Bold"
+      }
+    },
+    "Font Family": {
+      "Heading": {
+        "$type": "string",
+        "$value": "Inter Tight"
+      },
+      "Body": {
+        "$type": "string",
+        "$value": "DM Sans"
+      }
+    }
+  },
+  "Scale": {
+    "0": {
+      "$type": "number",
+      "$value": 0
+    },
+    "25": {
+      "$type": "number",
+      "$value": 1
+    },
+    "50": {
+      "$type": "number",
+      "$value": 2
+    },
+    "100": {
+      "$type": "number",
+      "$value": 4
+    },
+    "200": {
+      "$type": "number",
+      "$value": 8
+    },
+    "300": {
+      "$type": "number",
+      "$value": 12
+    },
+    "400": {
+      "$type": "number",
+      "$value": 16
+    },
+    "500": {
+      "$type": "number",
+      "$value": 20
+    },
+    "600": {
+      "$type": "number",
+      "$value": 24
+    },
+    "700": {
+      "$type": "number",
+      "$value": 28
+    },
+    "800": {
+      "$type": "number",
+      "$value": 32
+    },
+    "900": {
+      "$type": "number",
+      "$value": 40
+    },
+    "1000": {
+      "$type": "number",
+      "$value": 48
+    },
+    "1100": {
+      "$type": "number",
+      "$value": 60
+    },
+    "1150": {
+      "$type": "number",
+      "$value": 64
+    }
+  }
+}

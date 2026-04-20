@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{if(sessionStorage.getItem('pt-incoming')==='1'){document.documentElement.classList.add('pt-incoming');}}catch(e){}})();</script>
+<title>Vantage — Risk management by Vestima</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/tokens.css?v=40">
+<link rel="stylesheet" href="assets/layout.css?v=40">
+<link rel="stylesheet" href="assets/home.css?v=40">
+<link rel="stylesheet" href="assets/vantage.css?v=40">
+<link rel="stylesheet" href="assets/vantage-zz.css?v=40">
+</head>
+<body>
+<div class="page-transition" id="ptOverlay"><div class="pt-logo"><img src="assets/logo-full.png" alt="Vestima"></div></div>
+<div id="page-ticker" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a href="index.html" class="logo"><img src="assets/logo-full.png" alt="Vestima"></a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="vantage.html" class="active">Vantage</a>
+    <a href="veridex.html">Veridex</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a href="contact.html" class="btn btn-primary header-cta">Book a demo</a>
+</header>
+
+<section class="product-hero">
+  <div class="hero-bg"><div class="grid-lines"></div><div class="wash w1"></div><div class="wash w2"></div></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <span class="eyebrow" data-reveal>Vantage · Risk management &amp; trade surveillance</span>
+    <h1 data-reveal data-delay="1"><em>Vantage</em></h1>
+    <p class="lead" data-reveal data-delay="2">An independent surveillance layer for the people <em>accountable</em> for fund integrity.</p>
+    <div class="hero-actions" data-reveal data-delay="3">
+      <a href="contact.html" class="btn btn-primary">Book demo <span class="arr">→</span></a>
+      <a href="#surveillance" class="btn btn-ghost">How it works</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY IT EXISTS -->
+<section class="section" id="why">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">The problem</span>
+      <h2>You are personally accountable —<br>yet dependent on the people you <em>suspect.</em></h2>
+    </div>
+    <div class="risk-grid">
+      <div class="risk-card" data-reveal>
+        <div class="rk-tag">01 · Insider threat</div>
+        <h4>Discretion without oversight</h4>
+        <p>Dealers and fund managers exercise wide latitude every second of the trading day. Manual review cannot keep pace — and won't catch what it is looking at.</p>
+      </div>
+      <div class="risk-card" data-reveal data-delay="1">
+        <div class="rk-tag">02 · Broker collusion</div>
+        <h4>External relationships, invisible patterns</h4>
+        <p>Front-running, coordinated placement, and IOC manipulation often involve brokers. Without exchange-direct reconciliation, these patterns stay hidden.</p>
+      </div>
+      <div class="risk-card" data-reveal data-delay="2">
+        <div class="rk-tag">03 · No CEO visibility</div>
+        <h4>Self-reporting is not a control</h4>
+        <p>The leadership is accountable to investors and the regulator — yet has no independent feed of what actually happened on the desk today.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKFLOW — zig-zag straight-line timeline -->
+<section class="section" id="surveillance" style="padding-top:70px">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">How Vantage works</span>
+      <h2>From raw order data to a<br>closed-loop <em>investigation.</em></h2>
+    </div>
+
+    <div class="zz" data-reveal>
+      <svg class="zz-path" viewBox="0 0 800 1560" preserveAspectRatio="none" aria-hidden="true">
+        <!-- Path stays in the gap zones between rows so it never crosses heading text -->
+        <path
+          d="M 420 130 L 420 260 L 380 260 L 380 390
+             L 380 520 L 420 520 L 420 650
+             L 420 780 L 380 780 L 380 910
+             L 380 1040 L 420 1040 L 420 1170
+             L 420 1300 L 380 1300 L 380 1430"
+          stroke="#132B3C" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="miter"
+          stroke-dasharray="180 2400"
+          class="zz-flow-stroke"/>
+      </svg>
+
+      <!-- Each row has: heading+number (as watermark background) and a card -->
+      <div class="zz-row zz-right">
+        <div class="zz-bg"><span class="zz-bn">01</span><span class="zz-bh">Ingest</span></div>
+        <div class="zz-card">
+          <h4>Every order. Every route. Every fill.</h4>
+          <p>Three live streams from your desk.</p>
+          <p>Captured, timestamped, indexed.</p>
+        </div>
+      </div>
+
+      <div class="zz-row zz-left">
+        <div class="zz-bg"><span class="zz-bn">02</span><span class="zz-bh">Reconcile</span></div>
+        <div class="zz-card">
+          <h4>Compared to actual market data.</h4>
+          <p>See how your trades are affecting the market.</p>
+          <p>Anomalies surface instantly.</p>
+        </div>
+      </div>
+
+      <div class="zz-row zz-right">
+        <div class="zz-bg"><span class="zz-bn">03</span><span class="zz-bh">Detect</span></div>
+        <div class="zz-card">
+          <h4>35+ parameters. Your thresholds.</h4>
+          <p>Participation, VWAP drift, shadow P&amp;L, AMFI.</p>
+          <p>Versioned. One-click rollback.</p>
+        </div>
+      </div>
+
+      <div class="zz-row zz-left">
+        <div class="zz-bg"><span class="zz-bn">04</span><span class="zz-bh">Justify</span></div>
+        <div class="zz-card">
+          <h4>News, context, corporate actions — auto-matched.</h4>
+          <p>Every alert checked against the live market narrative.</p>
+          <p>Explained events close. The rest escalate.</p>
+        </div>
+      </div>
+
+      <div class="zz-row zz-right">
+        <div class="zz-bg"><span class="zz-bn">05</span><span class="zz-bh">Act</span></div>
+        <div class="zz-card">
+          <h4>On-the-record. Non-accusatory.</h4>
+          <p>Automated email to dealer or PM.</p>
+          <p>Every exchange auto-logged.</p>
+        </div>
+      </div>
+
+      <div class="zz-row zz-left zz-final">
+        <div class="zz-bg"><span class="zz-bn">06</span><span class="zz-bh">Close</span></div>
+        <div class="zz-card">
+          <h4>Accept. Escalate. Or export.</h4>
+          <p>Responses thread back to the alert.</p>
+          <p>Regulator-ready audit pack, on demand.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <span class="eyebrow" data-reveal>Book Vantage demo</span>
+    <h2 data-reveal data-delay="1">See your execution data<br>turned into <em>intelligence.</em></h2>
+    <p data-reveal data-delay="2">See Vantage in action on a live walkthrough.</p>
+    <a href="contact.html" class="btn btn-primary" data-reveal data-delay="3">Contact now <span class="arr">→</span></a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><div class="logo"><img src="assets/logo-full.png" alt="Vestima"></div><p>Vestima Goldstandard Financial Technologies Pvt Ltd. Engineering confidence in financial markets.</p></div>
+      <div class="footer-col"><h6>Company</h6><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h6>Products</h6><ul><li><a href="veridex.html">Veridex</a></li><li><a href="vantage.html">Vantage</a></li></ul></div>
+      <div class="footer-col"><h6>Socials</h6><ul><li><a href="https://www.linkedin.com/company/Vestima" target="_blank">LinkedIn</a></li><li><a href="https://www.youtube.com/@VestimaGoldStandard" target="_blank">YouTube</a></li></ul></div>
+      <div class="footer-col"><h6>Contact</h6><ul><li><a href="mailto:adeshbhavsar29@gmail.com">adeshbhavsar29@gmail.com</a></li><li><a href="tel:+919920848331">+91 99208 48331</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div>© 2026 Vestima Goldstandard Financial Technologies Pvt Ltd</div></div>
+  </div>
+</footer>
+<script src="assets/site.js?v=40"></script>
+</body>
+</html>

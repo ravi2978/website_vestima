@@ -1,0 +1,204 @@
+{
+  "$metadata": {
+    "tokenSetName": "Responsive",
+    "loadOrder": 4,
+    "requires": [
+      "Vestima UI Collection"
+    ],
+    "note": "Font sizes only. Font families come from Vestima Fonts.Font Family. Font weights from Vestima Fonts.Font Weight."
+  },
+  "Heading": {
+    "h1": {
+      "font-size": {
+        "$type": "number",
+        "$value": 60,
+        "$ref": "Scale.1100"
+      },
+      "font-family": {
+        "$type": "string",
+        "$value": "Inter Tight"
+      },
+      "font-weight": {
+        "$type": "string",
+        "$value": "SemiBold"
+      },
+      "line-height": {
+        "$type": "number",
+        "$value": 72
+      }
+    },
+    "h2": {
+      "font-size": {
+        "$type": "number",
+        "$value": 48,
+        "$ref": "Scale.1000"
+      },
+      "font-family": {
+        "$type": "string",
+        "$value": "Inter Tight"
+      },
+      "font-weight": {
+        "$type": "string",
+        "$value": "SemiBold"
+      },
+      "line-height": {
+        "$type": "number",
+        "$value": 58
+      }
+    },
+    "h3": {
+      "font-size": {
+        "$type": "number",
+        "$value": 40,
+        "$ref": "Scale.900"
+      },
+      "font-family": {
+        "$type": "string",
+        "$value": "Inter Tight"
+      },
+      "font-weight": {
+        "$type": "string",
+        "$value": "SemiBold"
+      },
+      "line-height": {
+        "$type": "number",
+        "$value": 48
+      }
+    },
+    "h4": {
+      "font-size": {
+        "$type": "number",
+        "$value": 32,
+        "$ref": "Scale.800"
+      },
+      "font-family": {
+        "$type": "string",
+        "$value": "Inter Tight"
+      },
+      "font-weight": {
+        "$type": "string",
+        "$value": "Medium"
+      },
+      "line-height": {
+        "$type": "number",
+        "$value": 40
+      }
+    },
+    "h5": {
+      "font-size": {
+        "$type": "number",
+        "$value": 24,
+        "$ref": "Scale.600"
+      },
+      "font-family": {
+        "$type": "string",
+        "$value": "Inter Tight"
+      },
+      "font-weight": {
+        "$type": "string",
+        "$value": "Medium"
+      },
+      "line-height": {
+        "$type": "number",
+        "$value": 32
+      }
+    },
+    "h6": {
+      "font-size": {
+        "$type": "number",
+        "$value": 20,
+        "$ref": "Scale.500"
+      },
+      "font-family": {
+        "$type": "string",
+        "$value": "Inter Tight"
+      },
+      "font-weight": {
+        "$type": "string",
+        "$value": "Medium"
+      },
+      "line-height": {
+        "$type": "number",
+        "$value": 28
+      }
+    }
+  },
+  "Paragraph": {
+    "Large": {
+      "font-size": {
+        "$type": "number",
+        "$value": 16,
+        "$ref": "Scale.400"
+      },
+      "font-family": {
+        "$type": "string",
+        "$value": "DM Sans"
+      },
+      "font-weight": {
+        "$type": "string",
+        "$value": "Regular"
+      },
+      "line-height": {
+        "$type": "number",
+        "$value": 24
+      }
+    },
+    "Medium": {
+      "font-size": {
+        "$type": "number",
+        "$value": 12,
+        "$ref": "Scale.300"
+      },
+      "font-family": {
+        "$type": "string",
+        "$value": "DM Sans"
+      },
+      "font-weight": {
+        "$type": "string",
+        "$value": "Regular"
+      },
+      "line-height": {
+        "$type": "number",
+        "$value": 18
+      }
+    },
+    "Small": {
+      "font-size": {
+        "$type": "number",
+        "$value": 8,
+        "$ref": "Scale.200"
+      },
+      "font-family": {
+        "$type": "string",
+        "$value": "DM Sans"
+      },
+      "font-weight": {
+        "$type": "string",
+        "$value": "Regular"
+      },
+      "line-height": {
+        "$type": "number",
+        "$value": 12
+      }
+    },
+    "Extra Small": {
+      "font-size": {
+        "$type": "number",
+        "$value": 4,
+        "$ref": "Scale.100"
+      },
+      "font-family": {
+        "$type": "string",
+        "$value": "DM Sans"
+      },
+      "font-weight": {
+        "$type": "string",
+        "$value": "Regular"
+      },
+      "line-height": {
+        "$type": "number",
+        "$value": 6
+      }
+    }
+  }
+}

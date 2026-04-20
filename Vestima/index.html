@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{if(sessionStorage.getItem('pt-incoming')==='1'){document.documentElement.classList.add('pt-incoming');}}catch(e){}})();</script>
+<title>Vestima — Engineering confidence in financial markets</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/tokens.css?v=25">
+<link rel="stylesheet" href="assets/layout.css?v=25">
+<link rel="stylesheet" href="assets/home.css?v=25">
+</head>
+<body>
+<div class="page-transition" id="ptOverlay"><div class="pt-logo"><img src="assets/logo-full.png" alt="Vestima"></div></div>
+<div id="page-ticker" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <img src="assets/logo-full.png" alt="Vestima">
+  </a>
+  <nav class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="vantage.html">Vantage</a>
+    <a href="veridex.html">Veridex</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a href="contact.html" class="btn btn-primary header-cta">Book a demo <span class="arr">→</span></a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="grid-lines"></div>
+    <div class="wash w1"></div>
+    <div class="wash w2"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero-inner">
+      <span class="eyebrow" data-reveal>Vestima</span>
+      <h1 data-reveal data-delay="1">Engineering <em>confidence</em> in financial markets.</h1>
+      <p class="hero-sub" data-reveal data-delay="2">
+        Institutional-grade systems that bring structure to regulation, discipline to risk, and precision to execution.
+      </p>
+      <div class="hero-cta" data-reveal data-delay="3">
+        <a href="#offerings" class="cta-main">
+          <span class="cta-text">Explore our products</span>
+          <span class="cta-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </a>
+        <a href="contact.html" class="cta-secondary">
+          <span class="cta-dot"></span>
+          <span>Book a 30-min walkthrough</span>
+        </a>
+      </div>
+
+      <div class="hero-built-for" data-reveal data-delay="4">
+        <span class="bf-label">Built for</span>
+        <span class="bf-rotator" aria-live="polite">
+          <span class="bf-word is-active">AMCs</span>
+          <span class="bf-word">PMSs</span>
+          <span class="bf-word">CIOs</span>
+          <span class="bf-word">Compliance teams</span>
+        </span>
+        <span class="bf-sep">·</span>
+        <span class="bf-suffix">across India</span>
+      </div>
+    </div>
+
+    <!-- Product visual -->
+    <div class="hero-visual" data-reveal data-delay="4">
+      <div class="dashboard">
+        <div class="dashboard-chrome">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <div class="title">vestima · dashboard</div>
+        </div>
+        <div class="dashboard-body">
+          <aside class="dash-side">
+            <div class="group">Intelligence</div>
+            <div class="nav active"><span class="dot"></span>Weekly summary</div>
+            <div class="nav"><span class="dot"></span>Upcoming actions</div>
+            <div class="nav"><span class="dot"></span>Impact radar</div>
+            <div class="nav"><span class="dot"></span>Heatmap</div>
+            <div class="group">Surveillance</div>
+            <div class="nav"><span class="dot"></span>Exposures</div>
+            <div class="nav"><span class="dot"></span>Exceptions</div>
+            <div class="nav"><span class="dot"></span>Broker intel</div>
+          </aside>
+          <main class="dash-main">
+            <div class="dash-topline">
+              <h3>This week</h3>
+              <span class="live">Live · 14,204 docs indexed</span>
+            </div>
+
+            <div class="kpi-row">
+              <div class="kpi">
+                <div class="lbl">Material changes</div>
+                <div class="val"><span data-count="14">0</span></div>
+                <div class="delta up">+3 vs last week</div>
+              </div>
+              <div class="kpi">
+                <div class="lbl">Critical deadlines</div>
+                <div class="val" style="color:var(--alert-500)"><span data-count="3">0</span></div>
+                <div class="delta crit">&lt; 30 days</div>
+              </div>
+              <div class="kpi">
+                <div class="lbl">Exposure vs limit</div>
+                <div class="val"><span data-count="68.4" data-suffix="%">0</span></div>
+                <div class="delta">0 breaches · 24h</div>
+              </div>
+            </div>
+
+            <div class="dash-table">
+              <div class="th">
+                <span>Circular</span>
+                <span>Subject</span>
+                <span>Impact</span>
+                <span>Due</span>
+              </div>
+              <div class="tr">
+                <span class="id">HO/IMD/03</span>
+                <span class="title">PMS · quarterly disclosure</span>
+                <span class="pill crit">Critical</span>
+                <span class="countdown crit">6d</span>
+              </div>
+              <div class="tr">
+                <span class="id">HO/PMS/02</span>
+                <span class="title">PMS · client reporting framework</span>
+                <span class="pill high">High</span>
+                <span class="countdown high">18d</span>
+              </div>
+              <div class="tr">
+                <span class="id">HO/MFD/09</span>
+                <span class="title">Mutual Funds · cyber resilience</span>
+                <span class="pill info">Moderate</span>
+                <span class="countdown ok">42d</span>
+              </div>
+              <div class="tr">
+                <span class="id">HO/PMS/11</span>
+                <span class="title">PMS · annual audited statements</span>
+                <span class="pill ok">On-track</span>
+                <span class="countdown ok">89d</span>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFERINGS -->
+<section class="section" id="offerings">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Our offerings</span>
+      <h2>Two products. One infrastructure for <em>confidence.</em></h2>
+      <p>Vestima builds complementary systems for the regulatory office and the trading desk — each designed for the rhythm and ruleset of Indian asset management.</p>
+    </div>
+
+    <div class="offerings">
+      <article class="offering" data-reveal>
+        <div class="o-head">
+          <div class="o-name">Veridex</div>
+        </div>
+        <div class="o-tagline">Interpret regulation with confidence.</div>
+        <div class="o-desc">Transforms circulars, notifications, and policy updates into structured intelligence — highlighting implications, timelines, and compliance actions relevant to your operations.</div>
+        <ul class="o-caps">
+          <li>Consolidated updates</li>
+          <li>Impact mapping</li>
+          <li>Compliance workflows</li>
+          <li>Searchable archive</li>
+          <li>Audit trail</li>
+        </ul>
+        <div class="o-foot">
+          <a href="veridex.html" class="primary">Learn more →</a>
+          <a href="contact.html">Book demo</a>
+        </div>
+      </article>
+
+      <article class="offering" data-reveal data-delay="1">
+        <div class="o-head">
+          <div class="o-name">Vantage</div>
+        </div>
+        <div class="o-tagline">Real-time oversight. Institutional discipline.</div>
+        <div class="o-desc">Monitors transactions in real time, flags breaches, and provides structured dashboards for compliance, risk teams, and leadership across the execution lifecycle.</div>
+        <ul class="o-caps">
+          <li>Trade surveillance</li>
+          <li>Pre / post-trade checks</li>
+          <li>Exposure monitoring</li>
+          <li>Limit tracking</li>
+          <li>Exception reporting</li>
+        </ul>
+        <div class="o-foot">
+          <a href="vantage.html" class="primary">Learn more →</a>
+          <a href="contact.html">Book demo</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL PULSE -->
+<section class="section-sm">
+  <div class="container">
+    <div class="local-pulse" data-reveal>
+      <div>
+        <span class="eyebrow">Built in Mumbai</span>
+        <h2>Global tools often miss the <em>local pulse.</em></h2>
+        <p>Vestima is engineered on the ground in Mumbai, specifically for the nuances of the Indian regulatory landscape. We ensure you are never caught off-guard by a circular or a shift in local market practice.</p>
+        <div class="pulse-stats">
+          <div><span class="n">IST</span><span class="l">Market hours aligned</span></div>
+          <div><span class="n">SEBI</span><span class="l">Primary regulator</span></div>
+          <div><span class="n">24/7</span><span class="l">Monitoring &amp; alerts</span></div>
+        </div>
+      </div>
+      <div class="globe-viz">
+        <svg viewBox="0 0 300 300">
+          <defs>
+            <radialGradient id="g1" cx="50%" cy="50%">
+              <stop offset="0%" stop-color="rgba(166,181,193,0.35)"/>
+              <stop offset="100%" stop-color="rgba(166,181,193,0)"/>
+            </radialGradient>
+          </defs>
+          <circle cx="150" cy="150" r="140" fill="url(#g1)"/>
+          <circle cx="150" cy="150" r="120" fill="none" stroke="rgba(255,255,255,0.14)"/>
+          <ellipse cx="150" cy="150" rx="120" ry="45" fill="none" stroke="rgba(255,255,255,0.08)"/>
+          <ellipse cx="150" cy="150" rx="120" ry="85" fill="none" stroke="rgba(255,255,255,0.08)"/>
+          <line x1="150" y1="30" x2="150" y2="270" stroke="rgba(255,255,255,0.08)"/>
+          <circle cx="172" cy="138" r="5" fill="#FFFFFF"/>
+          <circle cx="172" cy="138" r="14" fill="none" stroke="#FFFFFF" opacity="0.5">
+            <animate attributeName="r" values="5;22;5" dur="2.5s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.7;0;0.7" dur="2.5s" repeatCount="indefinite"/>
+          </circle>
+          <text x="150" y="285" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#A6B5C1" letter-spacing="2">MUMBAI · 19.04°N</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <span class="eyebrow" data-reveal>Book a demo</span>
+    <h2 data-reveal data-delay="1">Schedule a walkthrough<br>with our <em>team.</em></h2>
+    <p data-reveal data-delay="2">Thirty minutes. Your data. Our platform. See exactly how Vestima would work inside your institution.</p>
+    <div data-reveal data-delay="3">
+      <a href="contact.html" class="btn btn-primary">Contact now <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="assets/logo-full.png" alt="Vestima">
+        </div>
+        <p>Vestima Goldstandard Financial Technologies Pvt Ltd. Engineering confidence in financial markets.</p>
+      </div>
+      <div class="footer-col">
+        <h6>Company</h6>
+        <ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h6>Products</h6>
+        <ul><li><a href="veridex.html">Veridex</a></li><li><a href="vantage.html">Vantage</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h6>Socials</h6>
+        <ul><li><a href="https://www.linkedin.com/company/Vestima" target="_blank">LinkedIn</a></li><li><a href="https://www.youtube.com/@VestimaGoldStandard" target="_blank">YouTube</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h6>Contact</h6>
+        <ul>
+          <li><a href="mailto:adeshbhavsar29@gmail.com">adeshbhavsar29@gmail.com</a></li>
+          <li><a href="tel:+919920848331">+91 99208 48331</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 Vestima Goldstandard Financial Technologies Pvt Ltd</div>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/company/Vestima" target="_blank" title="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg></a>
+        <a href="https://www.youtube.com/@VestimaGoldStandard" target="_blank" title="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js?v=25"></script>
+</body>
+</html>

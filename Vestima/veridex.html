@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{if(sessionStorage.getItem('pt-incoming')==='1'){document.documentElement.classList.add('pt-incoming');}}catch(e){}})();</script>
+<title>Veridex — Regulatory intelligence by Vestima</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/tokens.css?v=25">
+<link rel="stylesheet" href="assets/layout.css?v=25">
+<link rel="stylesheet" href="assets/home.css?v=25">
+</head>
+<body>
+<div class="page-transition" id="ptOverlay"><div class="pt-logo"><img src="assets/logo-full.png" alt="Vestima"></div></div>
+<div id="page-ticker" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a href="index.html" class="logo"><img src="assets/logo-full.png" alt="Vestima"></a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="vantage.html">Vantage</a>
+    <a href="veridex.html" class="active">Veridex</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a href="https://veridex.vestima.in/login" target="_blank" class="btn btn-primary header-cta">Login →</a>
+</header>
+
+<section class="product-hero">
+  <div class="hero-bg">
+    <div class="grid-lines"></div>
+    <div class="wash w1"></div>
+    <div class="wash w2"></div>
+  </div>
+  <div class="container" style="position:relative;z-index:2;">
+    <span class="eyebrow" data-reveal>Veridex · Regulatory intelligence</span>
+    <h1 data-reveal data-delay="1"><em>Veridex</em></h1>
+    <p class="lead" data-reveal data-delay="2">Veridex continuously monitors every SEBI circular, exchange notification, and ministry update — processing them with advanced AI to surface what matters to your institution. Never miss a circular, a deadline, or a strategic shift in regulatory posture.</p>
+    <div class="hero-actions" data-reveal data-delay="3">
+      <a href="https://veridex.vestima.in/login" target="_blank" class="btn btn-primary">Use Veridex now <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="capabilities">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Core capabilities</span>
+      <h2>The "so what?" for <em>leadership.</em></h2>
+      <p>We reduce 100+ page consultation papers and complex circulars into 3–5 high-impact bullet points. Veridex filters the noise, identifying material changes to your business model in seconds.</p>
+    </div>
+    <div class="caps-grid">
+      <div class="cap" data-reveal><div class="num">01 · Executive brief</div><h4>Materiality detection</h4><p>Instantly flags "high-impact" updates across your coverage set, so leadership sees what matters without scrolling.</p></div>
+      <div class="cap" data-reveal data-delay="1"><div class="num">02 · Routing</div><h4>Stakeholder tagging</h4><p>Categorizes every update for Mutual Funds, Brokers, or PMS — so the right team gets the right brief.</p></div>
+      <div class="cap" data-reveal data-delay="2"><div class="num">03 · Deadlines</div><h4>Precision deadline tracking</h4><p>Automatically extracts every compliance date hidden inside SEBI documents and surfaces them as a live calendar.</p></div>
+      <div class="cap" data-reveal data-delay="3"><div class="num">04 · Posture</div><h4>Sentiment radar</h4><p>Quantifies whether SEBI is in "policy-shaping" or "enforcement" mode by analyzing 1,000+ latest documents.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div class="split-text" data-reveal>
+        <span class="eyebrow">Deadline intelligence</span>
+        <h2>Three lanes. Zero <em>surprises.</em></h2>
+        <p>Every compliance date extracted from every circular, routed into one of three urgency lanes. Your team sees what's breaking this week — and what's brewing for next quarter.</p>
+        <div class="lanes">
+          <div class="lane crit"><span class="dot"></span><div><strong>Critical &lt; 30 days</strong><span>Escalated to compliance lead &amp; CIO</span></div></div>
+          <div class="lane high"><span class="dot"></span><div><strong>Moderate · 30–90 days</strong><span>Routed to the relevant team with a working doc</span></div></div>
+          <div class="lane ok"><span class="dot"></span><div><strong>On-track &gt; 90 days</strong><span>Tracked quietly, resurfaced when the window opens</span></div></div>
+        </div>
+      </div>
+      <div class="split-visual" data-reveal data-delay="1">
+        <div class="dashboard">
+          <div class="dashboard-chrome"><div class="dots"><span></span><span></span><span></span></div><div class="title">veridex · upcoming</div></div>
+          <div style="padding:32px;">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:24px;">
+              <div><div style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;color:var(--text-subtle);text-transform:uppercase;">Upcoming · 30 days</div><div style="font-family:var(--font-display);font-size:48px;color:var(--text-head);line-height:1;margin-top:4px;">12</div></div>
+              <span class="pill crit">3 critical</span>
+            </div>
+            <div class="dash-table">
+              <div class="tr"><span class="id">IMD/03</span><span class="title">PMS · quarterly disclosure</span><span class="pill crit">6d</span><span></span></div>
+              <div class="tr"><span class="id">PMS/02</span><span class="title">Client reporting</span><span class="pill high">18d</span><span></span></div>
+              <div class="tr"><span class="id">MFD/09</span><span class="title">Cyber resilience</span><span class="pill ok">42d</span><span></span></div>
+              <div class="tr"><span class="id">PMS/11</span><span class="title">Annual statements</span><span class="pill ok">89d</span><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Policy lifecycle</span>
+      <h2>Trace the <em>lineage</em> of every rule.</h2>
+      <p>Regulations don't happen in isolation. Veridex threads the policy lifecycle — connecting a Board Agenda to its Press Release and the final Circular. See context, intent, and law on one timeline.</p>
+    </div>
+    <div class="timeline" data-reveal>
+      <div class="t-step"><div class="t-dot"></div><div class="t-kind">Board meeting</div><div class="t-title">Working group on PMS reporting</div><div class="t-date">Jan 14, 2026</div></div>
+      <div class="t-step"><div class="t-dot"></div><div class="t-kind">Consultation</div><div class="t-title">Client-level disclosures</div><div class="t-date">Feb 02, 2026</div></div>
+      <div class="t-step"><div class="t-dot"></div><div class="t-kind">Press release</div><div class="t-title">Revised PMS standards</div><div class="t-date">Mar 18, 2026</div></div>
+      <div class="t-step active"><div class="t-dot"></div><div class="t-kind">Final circular</div><div class="t-title">Effective 90d</div><div class="t-date">Apr 01, 2026</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm" style="padding:0">
+  <div class="container">
+    <div class="stat-pair" data-reveal>
+      <div class="stat"><div class="big"><span data-count="15">0</span><span class="unit">+</span></div><div class="lbl">Data sources monitored</div><div class="sub">SEBI, NSE, BSE, and Ministry circulars — scraped continuously.</div></div>
+      <div class="stat"><div class="big"><span data-count="39000">0</span><span class="unit">+</span></div><div class="lbl">Documents digested</div><div class="sub">The largest dedicated repository of Indian regulatory intelligence.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Dashboard intelligence</span>
+      <h2>Every widget answers one strategic <em>question.</em></h2>
+    </div>
+    <div class="spec" data-reveal data-delay="1">
+      <div class="row"><div class="k">Weekly summary</div><div class="v"><strong>What materially changed this week</strong> compared to last — one brief, no scrolling.</div></div>
+      <div class="row"><div class="k">Upcoming actions</div><div class="v"><strong>Which deadlines are approaching</strong>, and which are critical — extracted automatically.</div></div>
+      <div class="row"><div class="k">Impact radar</div><div class="v"><strong>Which stakeholders</strong> (Mutual Funds, Brokers, PMS) face the highest impact right now.</div></div>
+      <div class="row"><div class="k">Regulatory heatmap</div><div class="v"><strong>Which themes are heating up or cooling down</strong> — seven weeks of trend in a single grid.</div></div>
+      <div class="row"><div class="k">Activity mix</div><div class="v"><strong>Is the regulator enforcing or shaping policy?</strong> — posture read across 1,000+ documents.</div></div>
+      <div class="row"><div class="k">Policy lifecycle</div><div class="v"><strong>Where is a specific policy</strong> in the transition from proposal to law — threaded automatically.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <span class="eyebrow" data-reveal>Book Veridex demo</span>
+    <h2 data-reveal data-delay="1">See Veridex work on <em>your</em> coverage set.</h2>
+    <p data-reveal data-delay="2">30 minutes with our team — no slides, just the platform on live SEBI data.</p>
+    <a href="contact.html" class="btn btn-primary" data-reveal data-delay="3">Contact now <span class="arr">→</span></a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><div class="logo"><img src="assets/logo-full.png" alt="Vestima"></div><p>Vestima Goldstandard Financial Technologies Pvt Ltd. Engineering confidence in financial markets.</p></div>
+      <div class="footer-col"><h6>Company</h6><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h6>Products</h6><ul><li><a href="veridex.html">Veridex</a></li><li><a href="vantage.html">Vantage</a></li></ul></div>
+      <div class="footer-col"><h6>Socials</h6><ul><li><a href="https://www.linkedin.com/company/Vestima" target="_blank">LinkedIn</a></li><li><a href="https://www.youtube.com/@VestimaGoldStandard" target="_blank">YouTube</a></li></ul></div>
+      <div class="footer-col"><h6>Contact</h6><ul><li><a href="mailto:adeshbhavsar29@gmail.com">adeshbhavsar29@gmail.com</a></li><li><a href="tel:+919920848331">+91 99208 48331</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div>© 2026 Vestima Goldstandard Financial Technologies Pvt Ltd</div></div>
+  </div>
+</footer>
+<script src="assets/site.js?v=25"></script>
+</body>
+</html>
