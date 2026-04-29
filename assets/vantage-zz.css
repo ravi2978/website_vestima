@@ -17,15 +17,8 @@
 .zz-flow-stroke {
   stroke-dasharray: 180 10000;
   stroke-dashoffset: 180;
-  animation: zz-flow 6s ease-in-out infinite;
   filter: drop-shadow(0 0 8px rgba(19,43,60,0.35));
-  opacity: 0;
-}
-@keyframes zz-flow {
-  0%   { stroke-dashoffset:   180; opacity: 0; }
-  8%   { opacity: 0.95; }
-  92%  { opacity: 0.95; }
-  100% { stroke-dashoffset: -1680; opacity: 0; }
+  opacity: 0.95;
 }
 /* 6 rows × 260px = 1560px; card centers-y: 130, 390, 650, 910, 1170, 1430 */
 .zz-row {

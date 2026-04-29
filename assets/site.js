@@ -20,6 +20,31 @@
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
 
+  // ===== Scroll-driven flow line (Vantage workflow) =====
+  const flowStroke = document.querySelector('.zz-flow-stroke');
+  const flowContainer = document.querySelector('.zz');
+  if (flowStroke && flowContainer) {
+    const startOffset = 180;
+    const endOffset = -1680;
+    let flowTicking = false;
+    const updateFlow = () => {
+      const rect = flowContainer.getBoundingClientRect();
+      const vh = window.innerHeight;
+      const total = rect.height + vh;
+      const progress = Math.max(0, Math.min(1, (vh - rect.top) / total));
+      flowStroke.style.strokeDashoffset = startOffset + (endOffset - startOffset) * progress;
+    };
+    const onFlowScroll = () => {
+      if (!flowTicking) {
+        requestAnimationFrame(() => { updateFlow(); flowTicking = false; });
+        flowTicking = true;
+      }
+    };
+    updateFlow();
+    window.addEventListener('scroll', onFlowScroll, { passive: true });
+    window.addEventListener('resize', onFlowScroll);
+  }
+
   // ===== Animated KPI count-up =====
   const countIo = new IntersectionObserver((entries) => {
     entries.forEach(e => {
